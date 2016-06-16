@@ -1,5 +1,5 @@
-// Don't change or delete this line! It waits until the DOM has loaded, then calls 
-// the start function. More info: 
+// Don't change or delete this line! It waits until the DOM has loaded, then calls
+// the start function. More info:
 // https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded
 document.addEventListener('DOMContentLoaded', start)
 
@@ -8,7 +8,7 @@ function start () {
   one()
   two()
   three()
-    
+  makeVisible()
   // Your turn! Create a new function called `two`, then call it from here.
 }
 
@@ -32,3 +32,7 @@ function three () {
   three.classList.add('yellow')
 }
 // CREATE FUNCTION makeVisible HERE
+function makeVisible () {
+  var invisible = document.getElementsByClassName('invisible')[0]
+  invisible.classList.add('visible')
+}
